@@ -13,7 +13,7 @@ export const PRODUCTS = [
     desc: "سمنة طبيعية 100% من حليب أبقار بلدي طازج، بطعم البيت ورائحة الأصالة.",
     img: "assets/samneh.jpg",
     size: "نص كيلو",
-    price: 10,
+    price: 13,
     note: "حليب بلدي طازج",
   },
   {
@@ -23,7 +23,7 @@ export const PRODUCTS = [
     desc: "طحينة سمسم 100% من حبوب السمسم الطبيعية المختارة، ناعمة وغنية.",
     img: "assets/tahini.jpg",
     size: "600 غ",
-    price: 4,
+    price: 5.5,
     note: "سمسم مختار",
   },
   {
@@ -33,7 +33,7 @@ export const PRODUCTS = [
     desc: "زبدة فول سوداني 100% من حبوب طبيعية مختارة، بلا سكّر ولا إضافات.",
     img: "assets/peanut.jpg",
     size: "300 غ",
-    price: 3,
+    price: 4.5,
     note: "حبوب محمّصة",
   },
 ];
