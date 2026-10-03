@@ -8,7 +8,7 @@ const REQUIRED = { name: "الاسم", phone: "رقم الهاتف", area: "ال
 
 function buildMessage({ lines, extras, total, form }) {
   const out = ["🛒 *طلب جديد - منتجات الست*", ""];
-  lines.forEach((l) => out.push(`• ${l.name} × ${l.qty}${l.price > 0 ? ` = ${l.lineTotal}${CURRENCY}` : ""}`));
+  lines.forEach((l) => out.push(`• ${l.name}${l.size ? ` (${l.size})` : ""} × ${l.qty}${l.price > 0 ? ` = ${l.lineTotal}${CURRENCY}` : ""}`));
   if (extras.length) {
     out.push("", "*تحت الطلب:*");
     extras.forEach((x) => out.push(`• ${x}`));
@@ -133,7 +133,9 @@ export default function CartDrawer() {
                     <li key={l.id} className="line">
                       <img src={l.img} alt="" />
                       <div className="line-info">
-                        <p className="line-name">{l.name}</p>
+                        <p className="line-name">
+                          {l.name} {l.size && <small className="size-inline">{l.size}</small>}
+                        </p>
                         <p className="line-price">
                           {l.price > 0 ? `${l.lineTotal} ${CURRENCY}` : "السعر عند التأكيد"}
                         </p>

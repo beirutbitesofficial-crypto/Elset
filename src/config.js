@@ -12,7 +12,8 @@ export const PRODUCTS = [
     subtitle: "سمنة بلدية",
     desc: "سمنة طبيعية 100% من حليب أبقار بلدي طازج، بطعم البيت ورائحة الأصالة.",
     img: "assets/samneh.jpg",
-    price: 0,
+    size: "نص كيلو",
+    price: 10,
     note: "حليب بلدي طازج",
   },
   {
@@ -21,7 +22,8 @@ export const PRODUCTS = [
     subtitle: "طحينة سمسم",
     desc: "طحينة سمسم 100% من حبوب السمسم الطبيعية المختارة، ناعمة وغنية.",
     img: "assets/tahini.jpg",
-    price: 0,
+    size: "600 غ",
+    price: 4,
     note: "سمسم مختار",
   },
   {
@@ -30,7 +32,8 @@ export const PRODUCTS = [
     subtitle: "زبدة طبيعية",
     desc: "زبدة فول سوداني 100% من حبوب طبيعية مختارة، بلا سكّر ولا إضافات.",
     img: "assets/peanut.jpg",
-    price: 0,
+    size: "300 غ",
+    price: 3,
     note: "حبوب محمّصة",
   },
 ];

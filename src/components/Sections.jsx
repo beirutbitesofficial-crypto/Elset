@@ -127,7 +127,10 @@ function ProductCard({ p, index }) {
             <span className="chip">{p.note}</span>
           </div>
           <div className="product-foot">
-            <span className="price">{p.price > 0 ? `${p.price} ${CURRENCY}` : "السعر عند التأكيد"}</span>
+            <span className="price">
+              {p.price > 0 ? `${p.price} ${CURRENCY}` : "السعر عند التأكيد"}
+              {p.size && <small className="size">مرطبان {p.size}</small>}
+            </span>
             {qty === 0 ? (
               <button className="btn btn-gold btn-sm" onClick={() => add(p.id)}>
                 أضف إلى السلة
